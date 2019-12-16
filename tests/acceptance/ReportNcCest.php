@@ -67,7 +67,7 @@ class ReportNcCest
         $I->see($this->consequences1);
         $I->see($this->improvements1);
 
-        // submit NC
+        
         $reportNc->submitConfirm();
 
         // verify the dashboard
