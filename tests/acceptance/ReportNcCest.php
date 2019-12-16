@@ -38,7 +38,6 @@ class ReportNcCest
 
     }
 
-    // tests
     public function submitNcToPrimaryUnitAsEmployeeTest(AcceptanceTester $I, Login $login, ReportNc $reportNc)
     {
         $login->login($login::$employeeUsername, $login::$employeePassword);
