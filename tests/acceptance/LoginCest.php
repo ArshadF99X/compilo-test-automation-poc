@@ -7,7 +7,6 @@ class LoginCest
     {
     }
 
-    // tests
     public function loginAsEmployee(AcceptanceTester $I, \Page\Acceptance\Login $loginPage)
     {
         $I->wantTo('see login page ');
