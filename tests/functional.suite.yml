@@ -3,7 +3,7 @@
 # Suite for functional tests
 # Emulate web requests and make application process them
 # Include one of framework modules (Symfony2, Yii2, Laravel5) to use it
-# Remove this suite if you don't use FRAMEWORKS
+# Remove this suite if you don't use
 
 actor: FunctionalTester
 modules:
