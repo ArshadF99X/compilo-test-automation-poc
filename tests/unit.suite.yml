@@ -1,5 +1,3 @@
-# Codeception Test Suite Configuration
-#
 
 
 actor: UnitTester
