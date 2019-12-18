@@ -67,7 +67,7 @@ class ReportNcCest
         $I->see($this->consequences1);
         $I->see($this->improvements1);
 
-        // submit NC
+        
         $reportNc->submitConfirm();
 
         // verify the dashboard
@@ -142,7 +142,7 @@ class ReportNcCest
     }
 
     /*
-     * This is an intentionally failed to demonstrate the reports
+     * This is an intentionally failed to demonstrate the REPORTS
      */
     public function leaderCheckSubmittedReportDetailsFailTest(AcceptanceTester $I, Login $login, ReportNc $reportNc)
     {
