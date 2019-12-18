@@ -1,6 +1,5 @@
 # Codeception Test Suite Configuration
-# adde more comments bvgfebtr
-
+# THIS LINE WAS REMOVED
 actor: AcceptanceTester
 modules:
     enabled:
