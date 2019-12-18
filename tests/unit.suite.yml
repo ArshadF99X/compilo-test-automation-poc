@@ -1,6 +1,6 @@
 # Codeception Test Suite Configuration
 #
-# Suite for unit or integration tests.
+# Suite for unit or 
 
 actor: UnitTester
 modules:
