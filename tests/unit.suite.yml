@@ -1,6 +1,6 @@
 # Codeception 
 #
-# Suite for unit or 
+# Suite fo
 
 actor: UnitTester
 modules:
