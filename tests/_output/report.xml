@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="acceptance (ie)" tests="7" assertions="6" errors="1" failures="4" skipped="0" time="142.391666">
+    <testcase file="D:\Compilo\arshadf\compilo-test-automation-poc\tests\acceptance\LoginCest.php" name="loginAsEmployee" class="LoginCest" feature="see login page " assertions="2" time="11.584841"/>
+    <testcase file="D:\Compilo\arshadf\compilo-test-automation-poc\tests\acceptance\LoginCest.php" name="loginAsLeader" class="LoginCest" feature="see login page " assertions="2" time="10.757337"/>
+    <testcase file="D:\Compilo\arshadf\compilo-test-automation-poc\tests\acceptance\ReportNcCest.php" name="submitNcToPrimaryUnitAsEmployeeTest" class="ReportNcCest" feature="submit nc to primary unit as employee test" assertions="0" time="41.000355">
+      <failure type="Codeception\Exception\ElementNotFound">ReportNcCest: Submit nc to primary unit as employee test
+CSS or XPath element with xpath '//*[@id="actionday"]/div/table/tbody/tr[1]/td[5]/a' was not found.
+
+D:\Compilo\arshadf\compilo-test-automation-poc\tests\_support\_generated\AcceptanceTesterActions.php:628
+D:\Compilo\arshadf\compilo-test-automation-poc\tests\_support\Page\Acceptance\ReportNc.php:122
+D:\Compilo\arshadf\compilo-test-automation-poc\tests\acceptance\ReportNcCest.php:57
+</failure>
+    </testcase>
+    <testcase file="D:\Compilo\arshadf\compilo-test-automation-poc\tests\acceptance\ReportNcCest.php" name="submitNcToSecondaryUnitAsEmployeeTest" class="ReportNcCest" feature="submit nc to secondary unit as employee test" assertions="0" time="41.224355">
+      <failure type="Codeception\Exception\ElementNotFound">ReportNcCest: Submit nc to secondary unit as employee test
+CSS or XPath element with xpath '//*[@id="actionday"]/div/table/tbody/tr[1]/td[5]/a' was not found.
+
+D:\Compilo\arshadf\compilo-test-automation-poc\tests\_support\_generated\AcceptanceTesterActions.php:628
+D:\Compilo\arshadf\compilo-test-automation-poc\tests\_support\Page\Acceptance\ReportNc.php:122
+D:\Compilo\arshadf\compilo-test-automation-poc\tests\acceptance\ReportNcCest.php:94
+</failure>
+    </testcase>
+    <testcase file="D:\Compilo\arshadf\compilo-test-automation-poc\tests\acceptance\ReportNcCest.php" name="leaderCheckSubmittedReportsListTest" class="ReportNcCest" feature="leader check submitted reports list test" assertions="0" time="2.495535">
+      <error type="Facebook\WebDriver\Exception\UnexpectedAlertOpenException">ReportNcCest: Leader check submitted reports list test
+Facebook\WebDriver\Exception\UnexpectedAlertOpenException: Modal dialog present: false
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T19:05:32.194Z'
+System info: host: 'ARSHADF', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:8767/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: accept, unhandledPromptBehavior: accept, version: 11}
+Session ID: 9485024d-757f-4aad-87d6-791f10b3b064
+*** Element info: {Using=id, value=asdasd}
+
+D:\Compilo\arshadf\compilo-test-automation-poc\vendor\facebook\webdriver\lib\Exception\WebDriverException.php:140
+D:\Compilo\arshadf\compilo-test-automation-poc\vendor\facebook\webdriver\lib\Remote\HttpCommandExecutor.php:331
+D:\Compilo\arshadf\compilo-test-automation-poc\vendor\facebook\webdriver\lib\Remote\RemoteWebDriver.php:565
+D:\Compilo\arshadf\compilo-test-automation-poc\vendor\facebook\webdriver\lib\Remote\RemoteWebDriver.php:204
+D:\Compilo\arshadf\compilo-test-automation-poc\vendor\facebook\webdriver\lib\WebDriverExpectedCondition.php:185
+D:\Compilo\arshadf\compilo-test-automation-poc\vendor\facebook\webdriver\lib\WebDriverWait.php:67
+D:\Compilo\arshadf\compilo-test-automation-poc\tests\_support\_generated\AcceptanceTesterActions.php:2408
+D:\Compilo\arshadf\compilo-test-automation-poc\tests\_support\Page\Acceptance\Login.php:43
+D:\Compilo\arshadf\compilo-test-automation-poc\tests\acceptance\ReportNcCest.php:117
+</error>
+    </testcase>
+    <testcase file="D:\Compilo\arshadf\compilo-test-automation-poc\tests\acceptance\ReportNcCest.php" name="leaderCheckSubmittedReportDetailsTest" class="ReportNcCest" feature="leader check submitted report details test" assertions="1" time="18.125558">
+      <failure type="PHPUnit\Framework\ExpectationFailedException">ReportNcCest: Leader check submitted report details test
+Failed asserting that  on page /system.php?ncreport=64&amp;ok=r6zf912y300qgk5
+--&gt; DocumentsRead list0
+Report NCTreat
+Your missions2Follow up
+User adminStatistics - NC
+Leader
+Home
+SEARCH
+
+
+
+
+
+
+NC
+perspiciatis quas
+Actions needed to close NC
+Add a Comment
+Forward
+Description
+Ut et vel blanditiis autem laboriosam occaecati nesciunt alias. Eum aliquid non quas a. Quis incidunt modi v
+[Content too long to display. See complete response in 'D:\Compilo\arshadf\compilo-test-automation-poc\tests/_output\' directory]
+--&gt; contains "dolores illum".
+
+D:\Compilo\arshadf\compilo-test-automation-poc\tests\_support\_generated\AcceptanceTesterActions.php:344
+D:\Compilo\arshadf\compilo-test-automation-poc\tests\acceptance\ReportNcCest.php:138
+</failure>
+    </testcase>
+    <testcase file="D:\Compilo\arshadf\compilo-test-automation-poc\tests\acceptance\ReportNcCest.php" name="leaderCheckSubmittedReportDetailsFailTest" class="ReportNcCest" feature="leader check submitted report details fail test" assertions="1" time="17.203685">
+      <failure type="PHPUnit\Framework\ExpectationFailedException">ReportNcCest: Leader check submitted report details fail test
+Failed asserting that  on page /system.php?ncreport=64&amp;ok=r6zf912y300qgk5
+--&gt; DocumentsRead list0
+Report NCTreat
+Your missions2Follow up
+User adminStatistics - NC
+Leader
+Home
+SEARCH
+
+
+
+
+
+
+NC
+perspiciatis quas
+Actions needed to close NC
+Add a Comment
+Forward
+Description
+Ut et vel blanditiis autem laboriosam occaecati nesciunt alias. Eum aliquid non quas a. Quis incidunt modi v
+[Content too long to display. See complete response in 'D:\Compilo\arshadf\compilo-test-automation-poc\tests/_output\' directory]
+--&gt; contains "dolores illum".
+
+D:\Compilo\arshadf\compilo-test-automation-poc\tests\_support\_generated\AcceptanceTesterActions.php:344
+D:\Compilo\arshadf\compilo-test-automation-poc\tests\acceptance\ReportNcCest.php:158
+</failure>
+    </testcase>
+  </testsuite>
+</testsuites>
