@@ -1,5 +1,5 @@
 # Codeception Test Suite Configuration
-# THIS LINE WAS REMOVED and added back
+# THIS LINE WAS REMOVED and added back again
 actor: AcceptanceTester
 modules:
     enabled:
