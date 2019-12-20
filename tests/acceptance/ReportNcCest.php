@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 use \Page\Acceptance\Login;
 use Page\Acceptance\ReportNc;
@@ -35,9 +35,11 @@ class ReportNcCest
 
     public function _before(AcceptanceTester $I)
     {
-
     }
 
+    /**
+     * @skip
+     */
     public function submitNcToPrimaryUnitAsEmployeeTest(AcceptanceTester $I, Login $login, ReportNc $reportNc)
     {
         $login->login($login::$employeeUsername, $login::$employeePassword);
@@ -67,7 +69,7 @@ class ReportNcCest
         $I->see($this->consequences1);
         $I->see($this->improvements1);
 
-        
+
         $reportNc->submitConfirm();
 
         // verify the dashboard
@@ -75,6 +77,9 @@ class ReportNcCest
         $I->see($this->reportSubject1);
     }
 
+    /**
+     * @skip
+     */
     public function submitNcToSecondaryUnitAsEmployeeTest(AcceptanceTester $I, Login $login, ReportNc $reportNc)
     {
         $login->login($login::$employeeUsername, $login::$employeePassword);
@@ -112,6 +117,9 @@ class ReportNcCest
         $I->see($this->reportSubject2);
     }
 
+    /**
+     * @skip
+     */
     public function leaderCheckSubmittedReportsListTest(AcceptanceTester $I, Login $login, ReportNc $reportNc)
     {
         $login->login($login::$leaderUsername, $login::$leaderPassword);
@@ -124,6 +132,9 @@ class ReportNcCest
         $I->see($this->reportSubject2);
     }
 
+    /**
+     * @skip
+     */
     public function leaderCheckSubmittedReportDetailsTest(AcceptanceTester $I, Login $login, ReportNc $reportNc)
     {
         $login->login($login::$leaderUsername, $login::$leaderPassword);
@@ -141,8 +152,8 @@ class ReportNcCest
         $I->see($this->improvements2);
     }
 
-    /*
-     * This is an intentionally failed to demonstrate the REPORTS
+    /**
+     * @skip
      */
     public function leaderCheckSubmittedReportDetailsFailTest(AcceptanceTester $I, Login $login, ReportNc $reportNc)
     {
